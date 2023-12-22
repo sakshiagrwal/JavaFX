@@ -14,6 +14,7 @@
 
     <TextField fx:id="urlField" prefWidth="200.0" promptText="Enter URL here"/>
     <Button text="Fetch Images" onAction="#onFetchButtonClicked"/>
+
     <TextArea fx:id="textArea" prefHeight="200.0" prefWidth="200.0"/>
     <Button text="Download Images" onAction="#onDownloadButtonClicked"/>
 </VBox>

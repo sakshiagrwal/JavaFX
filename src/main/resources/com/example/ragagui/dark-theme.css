@@ -1,0 +1,19 @@
+.root {
+    -fx-background-color: #333;
+}
+
+.text-area, .text-field {
+    -fx-control-inner-background: #555;
+    -fx-text-fill: #DDD;
+    -fx-prompt-text-fill: #AAA;
+}
+
+.button {
+    -fx-background-color: #666;
+    -fx-text-fill: #EEE;
+    -fx-border-color: #AAA;
+}
+
+.button:hover {
+    -fx-background-color: #777;
+}

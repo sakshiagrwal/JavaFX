@@ -9,6 +9,11 @@ class HelloApplication : Application() {
     override fun start(stage: Stage) {
         val fxmlLoader = FXMLLoader(HelloApplication::class.java.getResource("hello-view.fxml"))
         val scene = Scene(fxmlLoader.load(), 320.0, 240.0)
+        scene.stylesheets.add(
+            HelloApplication::class.java.getResource("dark-theme.css")?.toExternalForm() ?: throw IllegalStateException(
+                "Stylesheet not found"
+            )
+        )
         stage.title = "Ragalahari Downloader!"
         stage.scene = scene
         stage.show()
